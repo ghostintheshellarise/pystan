@@ -29,5 +29,9 @@ if [[ $PYTHON_VERSION_MAJOR == '3' ]]; then conda create --quiet --yes -n env_na
 source activate env_name
 python -c "import numpy"
 
+# install arviz
+python -m pip install git+https://github.com/arviz-devs/arviz/ #arviz
+python -m pip install altair
+
 # run quietly due to travis ci's log limit
 python setup.py -q install

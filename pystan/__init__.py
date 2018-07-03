@@ -11,6 +11,7 @@ from pystan.misc import read_rdump, stan_rdump, stansummary
 from pystan.diagnostics import check_hmc_diagnostics
 from pystan.model import StanModel
 from pystan.lookup import lookup
+from pystan import plot
 
 logger = logging.getLogger('pystan')
 logger.addHandler(logging.NullHandler())
